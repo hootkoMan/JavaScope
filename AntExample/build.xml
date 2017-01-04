@@ -1,0 +1,16 @@
+<project name="ant-example" basedir=".">
+    <property name ="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist" location="dist"/>
+
+    <target name ="init">
+        <mkdir dir = "${build}"/>
+        <mkdir dir = "${dist}"/>
+    </target>
+
+    <target name ="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+</project>
