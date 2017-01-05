@@ -44,15 +44,15 @@
             <classpath>
                 <pathelement location="${test.build}"/>
                 <pathelement location="${build}"/>
-                <path refid="${test.classpath}"/>
+                <path refid="test.classpath"/>
             </classpath>
             <xmlfileset dir="${test.src}" includes="testng.xml"/>
         </testng>
     </target>
 
     <target name="dist" depends="test">
-        <jar destfile="${dist}/antExample.jar">
-            <fileset dir="${dist}"/>
+        <jar destfile="${dist}/AntExample.jar">
+            <fileset dir="${build}"/>
             <manifest>
                 <attribute name="Main-Class" value="Bootstrap"/>
             </manifest>
