@@ -3,3 +3,5 @@
 /test-report/
 /test.build/
 /build/
+out/
+.idea/
