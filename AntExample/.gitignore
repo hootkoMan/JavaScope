@@ -1,2 +1,4 @@
 *.class
-SpringTest/*
+/dist/
+/test-report/
+/test.build/
